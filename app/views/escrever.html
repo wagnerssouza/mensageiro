@@ -1,0 +1,37 @@
+<div ng-controller="escreverController as vm" class="container">
+
+    
+    
+    
+    <form ng-submit="vm.enviarMensagem()">
+  	<div class="form-group">
+	    <label for="nome">Nome</label>
+	    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required="required" ng-model="vm.nome">
+	</div>
+  	<div class="form-group">
+	    <label for="email">E-mail</label>
+	    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required" ng-model="vm.email">
+	</div>
+	<div class="form-group">
+	    <label for="telefone">Telefone</label>
+	    <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone" required="required" ng-model="vm.telefone">
+	</div>
+        
+    <div class="form-group">
+	    <label for="telefone">Estados</label>
+	    <select ng-model="vm.mySelect">
+            <option value="sp">sp</option>
+            <option value="rj">rj</option>
+            <option value="mg">mg</option>
+            <option value="ba">ba</option>            
+        </select>
+	</div>
+        
+
+	    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+    
+    
+    
+</div>
+
